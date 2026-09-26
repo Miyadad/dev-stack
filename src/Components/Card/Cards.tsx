@@ -74,7 +74,7 @@ const Cards = ({ devStacks, card, setCard }: IdevStackProps) => {
         </div>
 
         {/* Button */}
-        <button className={`mt-6 w-full rounded-xl bg-[#080d1c]  py-3 text-sm font-medium text-white hover:bg-gray-800`}
+        <button className={`mt-6 w-full rounded-xl bg-[#080d1c]  py-3 text-sm font-medium text-white hover:bg-gray-800 cursor-pointer`}
          onClick={handleCard}
           disabled={isAdded=== true ? true:false}>
           {isAdded ? "Added" : "Add to Stack"}
