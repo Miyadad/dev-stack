@@ -1,4 +1,4 @@
-import { type Dispatch, type SetStateAction } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 import type { IdevStack } from "../../DevType";
 import { toast } from "react-toastify";
 
@@ -11,10 +11,12 @@ interface IdevStackProps {
 
 const Cards = ({ devStacks, card, setCard }: IdevStackProps) => {
 
-  //const [Cbutton,setCbutton]=useState(false);
+  const [Cbutton,setCbutton]=useState(false);
 
  const handleCard = ( ) =>{
    //setCbutton(true);
+   
+    
 
     setCard([...card,devStacks] );
     //console.log(devStacks.name);
@@ -72,9 +74,9 @@ const Cards = ({ devStacks, card, setCard }: IdevStackProps) => {
         </div>
 
         {/* Button */}
-        <button className="mt-6 w-full rounded-xl bg-[#080d1c] py-3 text-sm font-medium text-white hover:bg-gray-800 "
+        <button className={`mt-6 w-full rounded-xl bg-[#080d1c]  py-3 text-sm font-medium text-white hover:bg-gray-800`}
          onClick={handleCard}
-         disabled={isAdded=== true ? true:false}>
+          disabled={isAdded=== true ? true:false}>
           {isAdded ? "Added" : "Add to Stack"}
         </button>
 
