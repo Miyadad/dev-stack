@@ -13,7 +13,7 @@ const Banner = () => {
    }
 
     return (
-        <div className="min-h-100 my-10 flex justify-between cointainer items-center ">
+        <div className="container mx-auto my-10 flex min-h-125 flex-col items-center justify-center gap-8 px-4 lg:flex-row lg:justify-between">
             <div className='m-4 p-4'>
                 <p className='text-7xl font-bold m-4 '>Build Your Ideal </p>
                 <p className='text-7xl font-bold m-4 bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent'>Development Stack</p>

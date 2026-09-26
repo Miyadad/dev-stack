@@ -1,4 +1,4 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import type { IdevStack } from "../../DevType";
 import { toast } from "react-toastify";
 
@@ -11,7 +11,7 @@ interface IdevStackProps {
 
 const Cards = ({ devStacks, card, setCard }: IdevStackProps) => {
 
-  const [Cbutton,setCbutton]=useState(false);
+  //const [Cbutton,setCbutton]=useState(false);
 
  const handleCard = ( ) =>{
    //setCbutton(true);
