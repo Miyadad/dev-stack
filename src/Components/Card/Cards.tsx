@@ -53,7 +53,8 @@ const Cards = ({ devStacks, card, setCard }: IdevStackProps) => {
           {devStacks.description}
         </p>
 
-        {/* Divider */}
+        {/* Divider */} to khon ki ki akj hoitece
+        
         <div className="my-5 border-t border-gray-100"></div>
 
         {/* Info */}

@@ -39,7 +39,7 @@ const SelectedCards = ({card, setCard }:IselectrdCard) => {
   <p className="mt-1 text-sm text-gray-400">
     {card.length === 0
       ? "No technologies selected yet."
-      : '${card.length} Technology Selected'}
+      : `${card.length} Technology Selected`}
   </p>
 
   {/* Selected Items */}

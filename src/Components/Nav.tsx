@@ -7,7 +7,7 @@ const Nav = () => {
 const[sign,setSign]=useState("signIn");
 const handleSign = (type: "signIn" | "signOut") =>{
     setSign(type);
-}
+} 
 
     return (
         <div className='bg-white fixed top-0 left-0 w-full z-50 p-4'>
